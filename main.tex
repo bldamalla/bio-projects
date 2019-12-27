@@ -1,0 +1,39 @@
+\documentclass[12pt]{report}
+
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage{lipsum}
+\usepackage{apacite}
+
+\onehalfspacing
+\setmainfont{Times New Roman}
+
+\begin{document}
+
+\author{AMALLA, Bon Leif D.}
+\title{Projects in Biology I and Biology II}
+\maketitle
+\newpage
+
+\part{Exposition}
+\include{bio2/cst}
+\include{bio1/darwin}
+\include{bio1/mendel}
+\include{bio2/origins}
+\part{Observations}
+\include{bio1/endo}
+\include{bio2/plantd}
+\include{bio1/animald}
+\include{bio2/sessile}
+\part{Beyond}
+\include{bio2/teleo}
+\include{bio1/genengg}
+\include{bio1/extinct}
+\include{bio2/econ}
+
+\singlespacing
+\bibliographystyle{apacite}
+\bibliography{main}
+
+\end{document}
