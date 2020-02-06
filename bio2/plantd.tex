@@ -1,3 +1,119 @@
 \chapter{Plant defense mechanisms (II)}
 
-\lipsum[10]
+Defense mechanisms are traits used by certain species to prevent others from attacking them.
+These can be thought of as adaptations for survival.
+Being adaptations, such are results of complexities in the growth and development of the individual and their interactions with the environment.
+Relating to relative fitness, plants with more successful defense mechanisms, consequently leaving more progeny, are considered to be more fit. % dont forget to add footnote on the sentence
+Purposefully leading to the discussion on teleology as a point of view in studying evolution, defense mechanisms provide a wide array of expression and questions.
+
+\section{General overview}
+As given by \citeA[p.792-802]{biomain}, there are different kinds of plant defense mechanisms for different kinds of situations.
+These include: physical defenses such as protection of the inner tissues with the epidermal cells,
+chemical defenses such as producing toxic substances to herbivores (including humans),
+pathogen recognition and plant cell death to prevent spread, and
+signaling pathways for plant immunity.
+As said, plant defense mechanisms can be very complex.
+
+\paragraph{Physical defenses}
+The epidermal layer of the plant serves as a layer of protection of the ``internal organs'' of the plant.
+Plants develop strong bark and waxy cuticles for structural integrity and maintenance of internal environments (by preventing water loss).
+Those structures also double as protection.
+The strong bark of the plant makes the material difficult to mechanically digest, requiring a lot of energy, and thus may not be an efficient source of nutrition for some organisms.
+The waxy cuticles, being thick layers of lipids, make it difficult for pathogens to infect the internal structures of the plant.
+Some plants also develop thorns from lateral meristems to prevent large herbivores from eating the plant.
+
+\paragraph{Chemical defenses through secondary metabolites}
+
+\paragraph{Pathogen recognition and defenses}
+
+\paragraph{Wounding defenses}
+
+\paragraph{Trade-off balance between defense and growth}
+The article by \citeA{Ludwig-Muller2015} reviews the effects of auxins, a class of plant hormones, in plant growth and expression of disease symptoms in the presence of bacteria and fungi, along with the balance between plant defense and growth.
+%% review the doc
+
+\section{Evolutionary effects on herbivory and the ecosystem}
+As has been said, being adaptations, plant defense mechanisms are crucial to protect the plant from ecological stresses such as herbivory.
+The interactions of herbivores with the plant with two types of defenses, as studied by \citeA{Loeuille2018}, have been found to have quantitative effects on the fitness of the plant with respect to the herbivore environment.
+The theoretical simulations, variables and parameters will be reviewed in this section.
+%% review the doc
+
+%% describe here what are the two types of defenses being used in the study
+\subsection{Summary of the study}
+With the general overview of general plant defense mechanisms in the previous section, such can be divided into two categories: \emph{quantitative} and \emph{qualitative} defenses.
+Quantitative defenses are those that require energy and dose to have effects on the herbivore or pathogen that threatens the plant.
+Qualitative defense on the other hand only determines herbivore deterrence or attraction by the presence or absence of the characteristics.
+As was assumed in the aforecited study, these defense mechanism \emph{bundles} have no energy cost for the plant.
+
+%% put here the objectives of the study
+The objectives of the study were to determine the effects of plant defense strategies to herbivory,
+to simulate whether the evolution of the defense strategies has a role in the diversification of strategies,
+and to study the effects of defense evolution in ecological diversity and dynamics.
+
+The variables used in the development of the simulations were the following:
+
+\begin{enumerate}
+    \item Plant and herbivore respective biomasses
+    \item Plant quantitative and qualitative defenses
+    \item The ``preference'' and ``generalism'' of the herbivore to the plant defenses
+\end{enumerate}
+
+On the other hand, the parameters used were:
+
+\begin{enumerate}
+    \item Plant basal carrying capacity
+    \item Conversion efficiency
+    \item Plant growth rate
+    \item ``Benefits'' of plant quantitative defenses in terms of reduced plant consumption
+    \item ``Costs'' of quantitative defenses
+    \item Herbivore mortality rate
+    \item Basal herbivore consumption
+    \item Variance of competition kernel
+\end{enumerate}
+
+The Lotka-Volterra system \footnote{see Chapter 1 for an overview} was used in modeling population dynamics.
+The choice of the model for the description of population dynamics is reasonable since, plants act as prey and herbivores act as predators.
+The biomass growth of both system actors (plant and herbivore) were based on the growth of each, their mortalities, competition, and assumed basal carrying capacity.
+Since the variables are dynamic (they change with respect to each other), the proposed representation seemed adequate for the system.
+
+The evolution of the plant defense strategies were said to be from the pressure exerted by herbivory, which relates to the fitness of the plants (resident and mutant),
+and was modeled based on a ``canonical equation of adaptive dynamics''.
+Fitness was defined as the rate at which the biomass grows given the defense traits of the plants present.
+This accounts for the ``evolutionary'' definition of fitness \cite{Ridley}.
+The canonical equation regards (small) mutation rates and the fitness benefit of slight changes in characteristics.
+
+At the end of the simulations, it was found that the evolution of quantitative defense traits helps to maintain or increase diversity of defense traits, 
+while the evolution of qualitative traits have detrimental effects on the coexistence of plants and herbivores.
+
+Though the study was successful in achieving their objectives, there were parts of the model that were unclear \footnotemark.
+
+\footnotetext{This is an opinion on the parts of the article that were unclear to me.
+Unfortunately, I have not found answers anywhere else, so I have decided to put them in the next section.}
+
+\subsection{Critiques and comments on the study}
+
+The critiques on the study are mainly based from the assumptions of the researchers \footnotemark.
+\footnotetext{This subsection is primarily based on my knowledge on the topic.}
+The first concern is related to the use of a single number to represent the defense mechanisms of the plant.
+As noted above, plants have developed a wide variety of defense mechanisms against herbivory including physical and chemical defenses.
+Quite similarly to human behavior, herbivores in the study were assumed to be able to ascertain preferences in the kinds of plants they ingest.
+The herbivore preferences were also represented as numbers.
+If the number representing the defense trait of a plant variant B is farther than that of another plant A, then the herbivore would prefer eating plant A.
+
+Consider the following thought experiment
+\footnote{I have devised this on my own based on consumer economics}.
+Given two defense traits that the herbivore is averse to, it will not want to be exposed more to them but rather receive less of them.
+Suppose there exists a set of combination of traits such that the herbivore does not prefer any one of those.
+In other words, the herbivore is indifferent to those combinations.
+
+Then, even if the defense traits of the plants are different (thus represented by different numbers), the ``preference'' of the herbivore should not change (should still be represented by the same number).
+With this scenario, then there is a contradiction with the methodology of the researcher, \textit{i.e.} it would be impossible to study the evolution of plant and herbivore traits.
+
+The problem is observed to arise when the multidimensional problem of trait preference is simplified into a single non-operational representation.
+Of course there are a lot of dimension reduction studies in statistics\footnote{such as principal component analysis and partial least squares regression} and in other fields.
+Yet such studies admit to the loss of ``explainability'' at the cost of modeling capability.
+
+The second concern, related to the first, is on the generality of the assumptions used in modeling.
+The study does not go anywhere specific and that may be the reason why the equations, parameters, and variables appeared too vague.
+It is understandable that it is for the sake of simplicity and getting the desired results as were described in the objectives.
+But it hides the logical structure that underlies the mechanism of defenses.
