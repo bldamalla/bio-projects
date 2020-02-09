@@ -1,3 +1,72 @@
 \chapter{Animal defense mechanisms (I)}
 
-\lipsum[19]
+\section{General defense mechanisms}
+%% general information for these can be found in webpages just make sure they look credible
+
+\paragraph{Chemical defenses}
+\footnote{from https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/chemical-defense}
+Chemical defenses are widespread within different groups.
+Comparing two major animal groups, chemical defenses are more extensive in invertebrates.
+These chemical defenses include toxins, or chemical with noxious odors, which affect the sensory systems some predators use to capture prey.
+Chemical defenses, similar to plant secondary metabolites, are synthesized in the bodies of animals.
+An example of a chemical defense is the secretion of ink of a cephalopod when it is threatened.
+\footnote{https://www.theguardian.com/science/2017/aug/09/why-do-cephalopods-produce-ink-and-what-on-earth-is-it-anyway}
+This results to a reduction of visibility (if the predator relies on light), protecting the animal.
+There are accounts of usage of cephalopod ink for commercial sources.
+\footnote{\textit{ibid.} as above}
+
+\paragraph{Immune systems}
+The human immune system is a very complex defense mechanism against unrecognized pathogens in the body.
+Multiple organs work together in order to keep the unwanted pathogens away from the body.
+Humans have two kinds of immunity: innate and adaptive immunity.
+Innate immunity given by the presence of the skin, mucous membranes, antimicrobial substances, and natural killer cells \cite[p.396-398]{anaphy}.
+Adaptive immunity on the other hand is an adaptation from the production of antigens that the system recognizes and terminates foreign material \cite[p.399-407]{anaphy}.
+
+\paragraph{Predator evasion}
+Predator-prey relationships are ubiquitous in nature.
+Naturally, for the prey to survive, it must have mechanisms to stay away from predators in order to be considered fit.
+An example of which is given above on ink secretion of some cephalopods.
+
+\section{Theoretical study on defense phenotype variance}
+In this section, a theoretical study by \citeA{Wang2019} on the evolution of defense phenotypes will be summarized and discussed.
+The study revolves around the evolution of two defense phenotypes that organisms can use sequentially \textit{i.e.} one defense is executed after another given that a first one fails.
+As summarized above animals have a wide variety of defense mechanisms to choose from and they are not limited to only one defense trait (as was seen with plants).
+These traits may also have variety across the population, given the possibility of genetic drift \cite{Ridley}.
+The study aimed to propose a potentially predictive explanation for kinds of defense variation.
+
+\subsection{Model description}
+Sequential traits ``must be crossed in turn'', therefore it is reasonable to assume that selection biasedly acts on the first defense trait executed by the organism.
+In order to study the time evolution of traits, the following variables were introduced.
+
+\begin{enumerate}
+    \item defense phenotypes;
+    \item average phenotypes;
+    \item phenotype variances;
+    \item total population
+\end{enumerate}
+
+Defense phenotypes and their variances were studied for each defense trait.
+The total population was also held constant since the \emph{frequencies} of individuals with \emph{defense traits} are studied.
+Ideal defense phenotypes were assumed, and that deviations around these ideals (tolerance) were accounted for.
+Though it was not explicitly stated, it is likely assumed that only one agent is being acted upon by the defense traits.
+The effectiveness of the phenotype is given as a constant value, which supports the assumption.
+Variant fitness was based on the \emph{conditional effectiveness} of the defense phenotypes.
+This relates indirectly to the evolutionary definition of fitness as an ability to leave healthy offspring \cite{Ridley}.
+\footnote{It is reasonable to assume that if defense mechanisms did not work, then the variant cannot leave healthy progeny.}
+And finally, mutation strengths were also considered.
+
+The distribution of the effectivity (of phenotypes), mutations (of phenotypes), and phenotypes are assumed to be Gaussian (\emph{normally} distributed).
+
+\subsection{Results}
+Based on model simulations it was found that because of trait selection defense phenotypes moved towards the ideal phenotype.
+These was caused by the following mechanisms:
+1) mutation;
+2) order of defense execution;
+3) trait effectivity.
+
+If there were no mutations in the population then all of the defense phenotypes were the same.
+Stronger mutations also resulted to high phenotype variance.
+As the traits evolve, it was found that the variance of the first trait is lower compared to the second, and this evolution is independent of conditional fitness.
+\footnote{Though this likely to be a circular argument since the equation was modeled such that this selection is biased towards the mutation of the first defense trait executed.}
+It was also observed that as a the effectivity of a defense trait increases, its variation decreases, while the variation of the other trait increases, regardless of execution order.
+\footnote{With the previous sentence, an interplay of effectivity, mutation, and variance results from the complex system.}
